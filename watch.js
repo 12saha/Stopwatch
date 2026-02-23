@@ -23,7 +23,8 @@ function start(){
          }
          let seczero=sec>9?"":"0";
          let minzero=min>9?"":"0";
-         eleid.innerText=`${minzero}${min} : ${seczero}${sec} : ${milsec}`;
+         let milseczero = milsec==0?"000":milsec
+         eleid.innerText=`${minzero}${min} : ${seczero}${sec} : ${milseczero}`;
     }
 
 }
